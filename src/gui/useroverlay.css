@@ -1,0 +1,111 @@
+body {
+  overflow-x: hidden;
+}
+
+.paint {
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  width: 280px;
+  height: 40px;
+}
+
+.path-text {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 260px;
+  color: white;
+  z-index: 1;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.userOverlay {      
+    height: 100px;
+    max-width: 100%;
+}
+
+.userOverlayContainer {      
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    background-size: cover;
+    background-image: url('https://www.photocase.com/photos/539539-blue-beautiful-green-colour-red-yellow-style-line-photocase-stock-photo-large.jpeg');
+    width: 100px;
+    right: 10%;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+.radialShow {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%);}
+
+.radialHide {
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 100%, 50% 50%, 50% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 100%, 50% 50%, 50% 100%, 100% 100%);
+  width: 10px;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+.selected {
+  -webkit-filter: brightness(200%);
+  filter: brightness(200%);
+}
+
+.userLabel {
+  position: absolute;
+  background: black;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: center;
+  top: 70px;
+  left: 10px;
+  width: 90px;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.switchUserText {
+  max-width: 100%;
+}
+
+.switchUserTextHide {
+  overflow: hidden;
+  width: 0 px;
+  height: 0 px;
+  font-size: 0px;
+}
+
+.switchUserTextShow {
+  max-width: 100%;
+}
+
+.openMenuButton {
+  position: absolute;
+  top: 0px;
+  right: 5%;
+  width: 50px;
+}
+
+.switchUserButton {
+  position: absolute;
+  right: 5%;
+}
+
+.urgentButton {
+  position: absolute;
+  top: 140px;
+  right: 5%;
+}
+
+.downButton {
+  position: absolute;
+  top: 250px;
+  right: 5%;
+}
